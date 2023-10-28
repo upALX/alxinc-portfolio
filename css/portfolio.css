@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,600;1,400&display=swap');
+
+:root{
+    --main-color: #212121;
+    --main-words-color:  rgba(255, 255, 255, 0.918);
+    --secondary-color:#ECB365; 
+    --ice-color: #f6f6f6;
+    --background-hover: rgba(39, 39, 39, 1);
+
+    --first-font: 'Krona One', sans-serif;
+    --secondary-word: 'Monserrat', sans-serif;
+}
+    
+body{
+    background-color: var(--main-color);
+    color: var(--main-words-color);
+    width: 100vw;   
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header.navigation{
+    padding: 3% 0 0 10%;
+}
+
+.navigation__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.navigation__menu__link{
+    font-family: var(--secondary-word);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+main.presentation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6% 8%; 
+    overflow: hidden;
+}
+
+section.presentation__assignment{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentation__assignment__title{
+    align-items: center;
+}
+
+footer.footer{
+    color: var(--main-color);
+    padding: 24px;
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+footer a.footer_links{
+    margin-right: 0.8em;
+    text-decoration: none;
+}
+
+footer a{
+    text-decoration: none;
+}
