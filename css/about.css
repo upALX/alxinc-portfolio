@@ -78,6 +78,10 @@ footer a.footer_links{
     text-decoration: none;
 }
 
+footer a img#footer_icons{
+    width: 24px;
+}
+
 footer a{
     text-decoration: none;
 }

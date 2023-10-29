@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="icon" href="assets/alxinc.png" type="image/x-icon">
     <meta name="darkreader-lock"> <!-- disabling darkreader bg default  -->
     <link rel="stylesheet" href="css/reset.css">
@@ -16,36 +20,69 @@
     <header class="navigation">
         <nav class="navigation__menu">
             <a class="navigation__menu__link" href="./index.html">Home</a>
-            <a class="navigation__menu__link" href="./about.html">Sobre</a>
+            <a class="navigation__menu__link" href="./about.html">About</a>
         </nav>
     </header>
     <main class="presentation">
         <section class="presentation__assignment">
-            <h1 class="presentation__assignment__title">Eleve seu negócio digital a outro nível <strong>com tecnologia
-                    de qualidade!</strong></h1>
+            <h1 class="presentation__assignment__title">Projects</strong></h1>
+            <div class="presentation__projects">
+                <!-- Slider main container -->
+                <div class="swiper mySwiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="" alt="" srcset="">
+                        <!-- put for with nunjucks -->
+                        <div class="presentation__card">
+
+                            <div class="presentation__buttons">
+                                <button class="presentations__button_card">
+                                    <img src="assets/github-light.png" alt="" srcset=""> GitHub
+                                </button>
+                                <button class="presentations__button_card">
+                                    <img src="" alt=""> Project
+                                </button>
+                            </div>
+                            Slide 1
+                        </div>
+                    </div>
+                    <div class="swiper-slide presentation__card">Slide 2</div>
+                    <div class="swiper-slide presentation__card">Slide 3</div>
+                    </div>
+                    <!-- pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="icons_footer">
             <a class="footer_links" href="https://github.com/upALX" target="_blank">
-                <img src="assets/github.png" alt="Github asset image">
+                <img id="footer_icons" style="width: 24px;" src="assets/github.png" alt="Github asset image">
             </a>
             <a class="footer_links" href="https://www.hackerrank.com/profile/alxinc" target="_blank">
-                <img style="width: 32px" src="assets/hacker-rank.png" alt="Hacker rank link">
+                <img id="footer_icons" src="assets/hacker-rank.png" alt="Hacker rank link">
             </a>
             <a class="footer_links" href="https://beacons.ai/alxinc" target="_blank">
-                <img class="footer_links" src="assets/links.png" alt="beacons link">
+                <img id="footer_icons" class="footer_links" src="assets/links.png" alt="beacons link">
             </a>
             <a class="footer_links" href="mailto:alexandreaddres@gmail.com" target="_blank">
-                <img src="assets/mail.png" alt="beacons link">
+                <img id="footer_icons" src="assets/mail.png" alt="beacons link">
             </a>
             <a class="footer_links" href="https://www.linkedin.com/in/alxinc/" target="_blank">
-                <img class="footer_links" src="assets/linkedin.png" alt="Linkedin asset image">
+                <img id="footer_icons" class="footer_links" src="assets/linkedin.png" alt="Linkedin asset image">
             </a>
         </div>
         <h3>Developed with 💜 by José Alexandre</h3>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swipper.js"></script>
 </body>
 </body>
 
