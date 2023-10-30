@@ -5,7 +5,7 @@
     --main-words-color:  #f5fafaec;
     --secondary-color: #ECB365;
     --black-default: #0D7377;
-    --backgorund-black-hover: rgba(39, 39, 39, 1);
+    --background-black-hover: rgba(39, 39, 39, 1);
 
     --first-font: 'Krona One', sans-serif;
     --secondary-word: 'Monserrat', sans-serif;
@@ -101,7 +101,7 @@ h2.presentation__links__subtitle{
 }
 
 .presentation__links__link:hover{
-    background-color: var(--backgorund-black-hover);
+    background-color: var(--background-black-hover);
 }
 
 img#personal-image{
