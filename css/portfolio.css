@@ -3,7 +3,7 @@
 :root{
     --main-color: #212121;
     --main-words-color:  rgba(255, 255, 255, 0.918);
-    --secondary-color:#ECB365;
+    --secondary-color:#6bd0f8;
     /* #ECB365;  */
     --ice-color: #f6f6f6;
     --background-hover: rgba(39, 39, 39, 1);
@@ -20,7 +20,6 @@
 body{
     background-color: var(--main-color);
     color: var(--main-words-color);
-    width: 100vw;   
     box-sizing: border-box;
     overflow-x: hidden;
 }
@@ -39,7 +38,28 @@ header.navigation{
     font-size: 24px;
     font-weight: 600;
     color: var(--secondary-color);
+    display: inline-block;
+    padding-bottom: 0.5em;
+    position: relative;
     text-decoration: none;
+}
+
+.navigation__menu__link::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transition: width 0.3s ease-out;
+}
+a.navigation__menu__link:hover::before{
+    width: 30%;
+}
+
+a.navigation__menu__link:hover{
+    color: var(--main-words-color);
 }
 
 main.presentation{
@@ -172,14 +192,81 @@ footer.footer{
 }
 
 footer a.footer_links{
-    margin-right: 0.8em;
+    margin: 0 15px;
     text-decoration: none;
 }
 
-footer a img#footer_icons{
-    width: 24px;
+footer a.footer_links img{
+    width: 24px
 }
 
-footer a{
-    text-decoration: none;
+footer div.icons_footer{
+    padding-bottom: 1em;
+}
+
+@media (max-width: 1200px){
+
+    header.navigation {
+        padding: 3%;
+    }
+
+    .navigation__menu {
+        justify-content: center;
+    }
+
+    .presentation{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentation__assignment {
+        width: auto;
+        margin-top: 10%;
+    }
+
+    h1.presentation__assignment__title{
+        font-size: 1.6rem;
+    }
+
+    p.presentation__assignment__paragraphs{
+        font-size: 1.2rem;
+    }
+
+    h2.presentation__links__subtitle{
+        font-size: 1.2rem;
+    }
+    footer.footer{
+        color: var(--main-color);
+        padding: 24px;
+        background-color: var(--secondary-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    footer a.footer_links{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 15px;
+        border-radius: 50%;
+        text-decoration: none;
+    }
+    
+    footer a.footer_links img{
+        width: 24px
+    }
+    
+    footer a.footer_links:hover{
+        background-color: var(--main-words-color);
+        transition: 0.3s;
+    }
+
+}
+
+@media (max-width: 700px){
+    
 }
