@@ -3,12 +3,12 @@
 :root{
     --main-color: #212121;
     --main-words-color:  #f5fafa;
-    --secondary-color: #ECB365;
+    --secondary-color:#6bd0f8;
     --black-default: #0D7377;
     --background-third-color: #ECB365;
     --black-default: #000000;
     --ice-color: #f6f6f6;
-    --backgorund-black-hover: rgba(39, 39, 39, 1);
+    --background-black-hover: rgba(39, 39, 39, 1);
 
     --first-font: 'Krona One', sans-serif;
     --secondary-word: 'Monserrat', sans-serif;
@@ -35,8 +35,29 @@ header.navigation{
     font-family: var(--secondary-word);
     font-size: 24px;
     font-weight: 600;
-    color: var(--background-third-color);
+    color: var(--secondary-color);
+    display: inline-block;
+    padding-bottom: 0.5em;
+    position: relative;
     text-decoration: none;
+}
+
+.navigation__menu__link::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transition: width 0.3s ease-out;
+}
+a.navigation__menu__link:hover::before{
+    width: 30%;
+}
+
+a.navigation__menu__link:hover{
+    color: var(--main-words-color);
 }
 
 main.presentation{
@@ -86,6 +107,44 @@ footer a{
     text-decoration: none;
 }
 
+@media (min-width: 1200px){
+    footer.footer{
+        color: var(--main-color);
+        padding: 24px;
+        background-color: var(--secondary-color);
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    footer a.footer_links{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 15px;
+        border-radius: 50%;
+        text-decoration: none;
+    }
+    
+    footer a.footer_links img{
+        width: 24px
+    }
+    
+    footer a.footer_links:hover{
+        background-color: var(--main-words-color);
+        transition: 0.3s;
+    }
+
+    footer h3{
+        position: absolute;
+        bottom: 0;
+    }
+}
+
 @media (max-width: 1200px){
 
     header.navigation {
@@ -96,10 +155,6 @@ footer a{
         justify-content: center;
     }
 
-    .navigation__menu__link {
-        
-    }
-    
     .presentation{
         flex-direction: column-reverse;
         padding: 5%;
@@ -121,5 +176,8 @@ footer a{
     h2.presentation__links__subtitle{
         font-size: 1.2rem;
     }
+}
 
+@media (max-width: 700px){
+    
 }
