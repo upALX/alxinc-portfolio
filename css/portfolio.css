@@ -111,7 +111,6 @@ section div.presentation__card{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    opacity: 0.1;
     border: 1px solid var(--main-words-color);
     border-radius: 12px;
 }
@@ -127,7 +126,6 @@ section div.presentation__card div.view_project{
 section div.presentation__card div.presentation_content{
     width: 60%;
     height: 30%;
-    padding: 2%;
     display: flex;
     color: var(--main-color);
     border-radius: 1.5em;
@@ -137,15 +135,16 @@ section div.presentation__card div.presentation_content{
     color: var(--main-words-color);
     font-family: var(--secondary-word);
     background-color: var(--background-black-hover);
-    margin-bottom: 1em;
 }
 
-
+section div.presentation__card div.presentation_content p{
+    width: 80%;
+    word-wrap: break-word;
+}
 
 section div.presentation__card div.presentation__buttons{
     display: flex;
     /* background-color: #000000; */
-    
 }
 
 section div.presentation__card div.presentation__buttons button.presentations__button_card{
@@ -188,7 +187,11 @@ footer.footer{
     color: var(--main-color);
     padding: 24px;
     background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    position: relative;
 }
 
 footer a.footer_links{
@@ -204,7 +207,32 @@ footer div.icons_footer{
     padding-bottom: 1em;
 }
 
+footer h3{
+    position: absolute;
+    bottom: 0;
+}
+
 @media (min-width: 1200px){
+    section div.presentation__card{
+        background-color: var(--background-cover-card);
+        background: radial-gradient(circle, rgba(107,208,248,0.8113620448179272) 0%, rgba(13,8,9,1) 100%);
+        width: 70%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.1;
+        border: 1px solid var(--main-words-color);
+        border-radius: 12px;
+    }
+
+    section div.presentation__card:hover{
+        opacity: 0.8;
+        border: 3px solid var(--secondary-color);
+        transition: 0.3s;
+    }
+    
     footer.footer{
         color: var(--main-color);
         padding: 24px;
@@ -277,4 +305,27 @@ footer div.icons_footer{
 
 @media (max-width: 700px){
     
+}
+
+@media(min-width: 350px) and (max-width: 500px){
+    section div.presentation__card div.view_project{
+        background-color: white;
+        width: 80%;
+        height: 50%;
+        margin: 0.5em;
+        display: flex;
+    }
+
+    section div.presentation__card div.presentation_content{
+        width: 80%;
+        height: 30%;
+        display: flex;
+        border-radius: 1.5em;
+        margin-bottom: 0.5em;
+    }
+
+    section div.presentation__card div.presentation_content p{
+        font-size: 0.9em;
+    }
+
 }

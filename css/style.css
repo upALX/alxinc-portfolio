@@ -30,7 +30,7 @@ header.navigation{
 
 .navigation__menu__link{
     font-family: var(--secondary-word);
-    font-size: 24px;
+    font-size: 1.3em;
     font-weight: 600;
     color: var(--secondary-color);
     display: inline-block;
@@ -157,6 +157,10 @@ footer div.icons_footer{
 }
 
 @media (min-width: 1200px){
+    p.presentation__assignment__paragraphs{
+        width: 500px;
+    }
+
     footer.footer{
         color: var(--main-color);
         padding: 24px;
@@ -190,6 +194,7 @@ footer div.icons_footer{
     footer h3{
         position: absolute;
         bottom: 0;
+        margin-top: 5em;
     }
 }
 
@@ -218,6 +223,10 @@ footer div.icons_footer{
     }
 
     p.presentation__assignment__paragraphs{
+        width: 500px;
+    }
+
+    p.presentation__assignment__paragraphs{
         font-size: 1.2rem;
     }
 
@@ -242,4 +251,21 @@ footer div.icons_footer{
         color: var(--main-words-color);
         text-decoration: none;
     }
+}
+
+@media(min-width: 300px) and (max-width: 500px){
+
+    header .navigation__menu {
+        gap: 40px;
+    }
+
+    h1.presentation__assignment__title{
+        width: 200px;
+    }
+
+    p.presentation__assignment__paragraphs{
+        width: 250px;
+    }
+
+
 }
