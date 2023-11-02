@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,600;1,400&display=swap');
+@import url(reset.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 :root{
     --main-color: #212121;
@@ -157,6 +164,10 @@ footer div.icons_footer{
 }
 
 @media (min-width: 1200px){
+    a.navigation__menu__link{
+        font-size: 1.5em;
+    }
+
     p.presentation__assignment__paragraphs{
         width: 500px;
     }
@@ -206,6 +217,7 @@ footer div.icons_footer{
 
     .navigation__menu {
         justify-content: center;
+        font-size: 1.6em;
     }
 
     .presentation{
@@ -219,15 +231,13 @@ footer div.icons_footer{
     }
 
     h1.presentation__assignment__title{
-        font-size: 1.6rem;
-    }
-
-    p.presentation__assignment__paragraphs{
         width: 500px;
+        font-size: 1.7em;
     }
-
+    
     p.presentation__assignment__paragraphs{
-        font-size: 1.2rem;
+        width: 400px;
+        font-size: 1.5em;
     }
 
     h2.presentation__links__subtitle{
@@ -236,6 +246,28 @@ footer div.icons_footer{
 }
 
 @media (min-width: 300px){
+    
+}
+
+@media(min-width: 250px) and (max-width: 450px){
+
+    header .navigation__menu {
+        gap: 40px;
+    }
+
+    a.navigation__menu__link{
+        font-size: 1em;
+    }
+    
+
+    h1.presentation__assignment__title{
+        width: 200px;
+    }
+
+    p.presentation__assignment__paragraphs{
+        width: 200px;
+    }
+
     .presentation__links__link{
         border: 2px solid var(--secondary-color);
         /* background-color: #000000; */
@@ -246,25 +278,45 @@ footer div.icons_footer{
         box-sizing: border-box;
         width: 60%;
         border-radius: 16px;
-        font-size: 1.5rem;
+        font-size: 1.5em;
         padding: 21.5px 80px;
         color: var(--main-words-color);
         text-decoration: none;
     }
 }
 
-@media(min-width: 300px) and (max-width: 500px){
+@media(min-width: 450px) and (max-width: 700px){
 
     header .navigation__menu {
         gap: 40px;
     }
 
+    a.navigation__menu__link{
+        font-size: 1.2em;
+    }
+
     h1.presentation__assignment__title{
-        width: 200px;
+        width: 355px;
     }
 
     p.presentation__assignment__paragraphs{
-        width: 250px;
+        width: 300px;
+    }
+
+    .presentation__links__link{
+        border: 2px solid var(--secondary-color);
+        /* background-color: #000000; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        box-sizing: border-box;
+        width: 60%;
+        border-radius: 16px;
+        font-size: 1.5em;
+        padding: 21.5px 80px;
+        color: var(--main-words-color);
+        text-decoration: none;
     }
 
 
