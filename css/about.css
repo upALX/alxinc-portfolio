@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,600;1,400&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root{
     --main-color: #212121;
     --main-words-color:  #f5fafa;
@@ -13,13 +19,10 @@
     --first-font: 'Krona One', sans-serif;
     --secondary-word: 'Monserrat', sans-serif;
 }
-    
+
 body{
     background-color: var(--main-color);
     color: var(--main-words-color);
-    width: 100vw;   
-    box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 header.navigation{
@@ -60,31 +63,175 @@ a.navigation__menu__link:hover{
     color: var(--main-words-color);
 }
 
-main.presentation{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 6% 8%; 
-    overflow: hidden;
+.presentation__assignment__timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
 }
 
-section.presentation__assignment{
+.presentation__assignment__container{
+    padding: 10px 50px;
+    position: relative;
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+    color: var(--main-color);
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+@keyframes movedown{
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-p.presentation__assignment__paragraphs{
-    font-size: 24px;
+.presentation__assignment__container:nth-child(1){
+    animation-delay: 0s;
+}
+.presentation__assignment__container:nth-child(2){
+    animation-delay: 1s;
+}
+.presentation__assignment__container:nth-child(3){
+    animation-delay: 2s;
+}
+.presentation__assignment__container:nth-child(4){
+    animation-delay: 3s;
+}
+.presentation__assignment__container:nth-child(5){
+    animation-delay: 4s;
+}
+.presentation__assignment__container:nth-child(6){
+    animation-delay: 5s;
+}
+.presentation__assignment__container:nth-child(7){
+    animation-delay: 6s;
+}
+.presentation__assignment__container:nth-child(8){
+    animation-delay: 7s;
+}
+.presentation__assignment__container:nth-child(9){
+    animation-delay: 8s;
+}
+
+
+.presentation__assignment__text-box{
+    padding: 20px 30px;
+    background: var(--main-words-color);
+    position: relative;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+.presentation__assignment__container-left{
+    left: 0;
+}
+
+.presentation__assignment__container-right{
+    left: 50%;
+}
+
+div.presentation__assignment__container img{
+    position: absolute;
+    width: 3.2em;
+    border-radius: 50%;
+    padding: 2%;
+    right: -20px;
+    z-index: 1;
+    background-color: var(--main-words-color);
+}
+
+div.presentation__assignment__container-right img{
+    left: -20px;
+    z-index: 2;
+}
+
+.presentation__assignment__timeline::after{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background-color: var(--main-words-color);
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 6s linear forwards;
+}
+@keyframes moveline{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+div.presentation__assignment__container-left img{
+    z-index: 2;
+}
+
+div.presentation__assignment__text-box h2{
+    font-family: var(--first-font);
+    font-size: 1em;
+    font-weight: 600;
+}
+
+div.presentation__assignment__text-box small{
     font-family: var(--secondary-word);
-    margin-bottom: 5%;
+    font-size: 1em;
+    display: inline-block;
+    margin: 0.5em 0 1em 0;
+}
+
+div.presentation__assignment__text-box{
+    font-family: var(--secondary-word);
+}
+
+div.presentation__assignment__text-box button{
+    margin-top: 1em;
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid var(--main-color);
+    font-family: var(--first-font);
+}
+
+span.presentation__container__left-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid var(--main-words-color);
+    right: -15px;
+}
+
+span.presentation__container__right-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid var(--main-words-color);
+    left: -15px;
 }
 
 img#personal-image{
     border: 1px solid var(--secondary-color);
     border-radius: 8%;
     width: 30%;
+}
+
+footer{
+    flex-shrink: 0;
 }
 
 footer.footer{
@@ -108,13 +255,18 @@ footer a{
     text-decoration: none;
 }
 
-
 footer h3{
     position: absolute; 
     bottom: 0;
 }
 
 @media (min-width: 1200px){
+    div.presentation__assignment__text-box button:hover{
+        color: var(--ice-color);
+        background-color: var(--secondary-color);
+        transition: 0.3s;
+    }
+
     footer.footer{
         color: var(--main-color);
         padding: 24px;
@@ -124,7 +276,6 @@ footer h3{
         align-items: center;
         justify-content: center;
     }
-    
     
     footer a.footer_links{
         width: 50px;
@@ -185,6 +336,38 @@ footer h3{
     }
 }
 
-@media (max-width: 700px){
-    
+@media screen and (max-width: 650px){
+    .presentation__assignment__timeline{
+        margin: 50px;
+    }
+    .presentation__assignment__timeline::after{
+        left: 31px;
+    }
+    .presentation__assignment__container{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .presentation__assignment__text-box small{
+        margin-bottom: 10px;
+    }
+    div.presentation__assignment__container-right{
+        left: 0;
+    }
+
+    .presentation__assignment__container-right{
+        left: 20px;
+    }
+
+    .presentation__assignment__container-left img.left,.presentation__assignment__container-right img.right{
+        left: 10px;
+    }
+
+    span.presentation__container__left-arrow,
+    span.presentation__container__right-arrow{
+        border-right: 15px solid var(--ice-color);
+        border-left: 0;
+        left: -15px;
+    }
+
 }
