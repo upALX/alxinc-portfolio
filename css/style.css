@@ -14,7 +14,7 @@
     --black-default: #0D7377;
     --background-black-hover: rgba(39, 39, 39, 1);
 
-    --scroolbar-color: rgba(46, 222, 245, 0.144);
+    --scrollbar-color: rgba(46, 222, 245, 0.144);
 
     --first-font: 'Krona One', sans-serif;
     --secondary-word: 'Monserrat', sans-serif;
@@ -33,7 +33,7 @@ body{
     width: 12px;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: var(--scroolbar-color);
+    background-color: var(--scrollbar-color);
     border-radius: 6px;
 }
 
