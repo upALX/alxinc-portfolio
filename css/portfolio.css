@@ -13,6 +13,7 @@
 
     --first-font: 'Krona One', sans-serif;
     --secondary-word: 'Monserrat', sans-serif;
+    --scrollbar-color: rgba(46, 222, 245, 0.144);
 
     --swiper-pagination-progressbar-bg-color: var(--secondary-color)
     --swipper-pagination-color: var(--secondary-color)
@@ -22,6 +23,16 @@ body{
     background-color: var(--main-color);
     color: var(--main-words-color);
     overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--scrollbar-color);
+    border-radius: 6px;
 }
 
 header.navigation{
@@ -135,6 +146,7 @@ section div.presentation__card div.presentation_content{
     color: var(--main-words-color);
     font-family: var(--secondary-word);
     background-color: var(--background-black-hover);
+    margin-bottom: 0.5em;
 }
 
 section div.presentation__card div.presentation_content p{
@@ -142,27 +154,26 @@ section div.presentation__card div.presentation_content p{
     word-wrap: break-word;
 }
 
-section div.presentation__card div.presentation__buttons{
+div.presentation__buttons-link{
     display: flex;
-    /* background-color: #000000; */
+    width: 40%;
+    justify-content: space-between;
 }
 
-section div.presentation__card div.presentation__buttons button.presentations__button_card{
-    font-family: var(--secondary-word);
-    color: var(--main-words-color);
+div.presentation__buttons-link button{
+    background-color: var(--ice-color);
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+    padding: 4px;
+    opacity: 0.9;
+}
+
+div.presentation__buttons-link button:hover{
+    text-shadow: 8px 4px 18px var(--main-color);
     cursor: pointer;
-    border: none;
-    padding: 0.6em;
-    display: flex;
-    gap: 1em;
-    background-color: #1f1e1e8e;
-    font-size: 1em;
-    border-radius: 4%;
-}
-
-section div.presentation__card div.presentation__buttons button.presentations__button_card:hover{
-    background-color: var(--background-black-hover);
-    transition: 0.5s;
+    opacity: 1;
+    transition: 0.3s;
+    border-color: var(--secondary-color);
 }
 
 div.swiper-pagination{
@@ -195,7 +206,7 @@ footer.footer{
 }
 
 footer a.footer_links{
-    margin: 0 15px;
+    margin: 0 24px;
     text-decoration: none;
 }
 
@@ -232,6 +243,10 @@ footer h3{
         border: 3px solid var(--secondary-color);
         transition: 0.3s;
     }
+
+    button img.presentation__images{
+        width: 24px
+    }
     
     footer.footer{
         color: var(--main-color);
@@ -241,8 +256,8 @@ footer h3{
         position: relative;
         align-items: center;
         justify-content: center;
+        
     }
-    
     
     footer a.footer_links{
         width: 50px;
@@ -250,7 +265,7 @@ footer h3{
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 0 15px;
+        margin: 0 32px;
         border-radius: 50%;
         text-decoration: none;
     }
@@ -270,7 +285,17 @@ footer h3{
     }
 }
 
-@media (max-width: 1200px){
+@media (min-width: 600px) and (max-width: 1200px){
+
+    html, body{
+        height: 100%;
+        margin: 0;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+    }
 
     header.navigation {
         padding: 3%;
@@ -301,13 +326,15 @@ footer h3{
     h2.presentation__links__subtitle{
         font-size: 1.2rem;
     }
-}
 
-@media (max-width: 700px){
     
+    div.presentation__buttons-link{
+        width: 30%;
+        opacity: 1;
+    }
 }
 
-@media(min-width: 350px) and (max-width: 500px){
+@media(min-width: 350px) and (max-width: 600px){
     section div.presentation__card div.view_project{
         background-color: white;
         width: 80%;

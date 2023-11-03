@@ -14,6 +14,8 @@
     --black-default: #0D7377;
     --background-black-hover: rgba(39, 39, 39, 1);
 
+    --scrollbar-color: rgba(46, 222, 245, 0.144);
+
     --first-font: 'Krona One', sans-serif;
     --secondary-word: 'Monserrat', sans-serif;
 }
@@ -22,8 +24,17 @@ body{
     background-color: var(--main-color);
     color: var(--main-words-color);
     width: 100vw;   
+    height: 100%;
     box-sizing: border-box;
     overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--scrollbar-color);
+    border-radius: 6px;
 }
 
 header.navigation{
@@ -147,20 +158,29 @@ footer.footer{
     color: var(--main-color);
     padding: 24px;
     background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    position: relative;
 }
 
 footer a.footer_links{
-    margin-right: 0.8em;
+    margin: 0 24px;
     text-decoration: none;
 }
 
-footer a img#footer_icons{
-    width: 24px;
+footer a.footer_links img{
+    width: 24px
 }
 
 footer div.icons_footer{
     padding-bottom: 1em;
+}
+
+footer h3{
+    position: absolute;
+    bottom: 0;
 }
 
 @media (min-width: 1200px){
@@ -215,6 +235,11 @@ footer div.icons_footer{
         padding: 3%;
     }
 
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
     .navigation__menu {
         justify-content: center;
         font-size: 1.6em;
@@ -243,10 +268,6 @@ footer div.icons_footer{
     h2.presentation__links__subtitle{
         font-size: 1.2rem;
     }
-}
-
-@media (min-width: 300px){
-    
 }
 
 @media(min-width: 250px) and (max-width: 450px){
