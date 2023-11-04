@@ -4,7 +4,9 @@
 
 This is source code to my portfolio. You can get it and use to create your portfolio with your face. Enjoy yourself!
 
-👷🏿‍♂️**This project is under development**🛠️
+*Deploy Status:*
+
+![Vercel](http://therealsujitk-vercel-badge.vercel.app/?app=alxinc-portfolio&style=for-the-badge&logo=false)
 
 ---
 
