@@ -212,6 +212,14 @@ div.presentation__assignment__text-box button{
     font-family: var(--first-font);
 }
 
+div.presentation__assignment__text-box button a{
+    width: 100%;
+    height: 100%;
+    padding: 6px 10px;
+    text-decoration: none;
+    color: var(--main-color)
+}
+
 span.presentation__container__left-arrow{
     height: 0;
     width: 0;
