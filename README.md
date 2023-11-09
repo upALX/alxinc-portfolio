@@ -4,7 +4,9 @@
 
 This is source code to my portfolio. You can get it and use to create your portfolio with your face. Enjoy yourself!
 
-👷🏿‍♂️**This project is under development**🛠️
+*Deploy Status:*
+
+![Vercel](http://therealsujitk-vercel-badge.vercel.app/?app=alxinc-portfolio&style=for-the-badge&logo=false)
 
 ---
 
@@ -33,7 +35,6 @@ npm run dev
 ## Make your mark :triangular_flag_on_post:      
 
 **If you have any problems with this app or have an idea that contributes, open a [issue](https://github.com/upALX/alxinc-portfolio/issues), [pull request](https://github.com/upALX/alxinc-portfolio/pulls) or find me on [Linkedin](https://www.linkedin.com/in/alxinc/). Don't forget to give the project a star 🌟 :D**
-
 
 ## License :unlock:
 
