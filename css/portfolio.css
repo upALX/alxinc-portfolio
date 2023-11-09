@@ -147,7 +147,7 @@ section div.presentation__card div.presentation_content{
     color: var(--main-color);
     border-radius: 1.5em;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     color: var(--main-words-color);
     font-family: var(--secondary-word);
