@@ -8,6 +8,10 @@ This is source code to my portfolio. You can get it and use to create your portf
 
 ![Vercel](http://therealsujitk-vercel-badge.vercel.app/?app=alxinc-portfolio&style=for-the-badge&logo=false)
 
+
+*This project is deployed, but under development*
+
+![Gyphi](https://github.com/upALX/All-Assets/blob/main/gif-construction.webp)
 ---
 
 ## Tech stack
@@ -42,4 +46,4 @@ This project is under the [MIT license](https://github.com/upALX/alxinc-portfoli
 
 ---
 
-**Developed with 💜 by Alexandre**
+**Developed with 💜 by ME**
