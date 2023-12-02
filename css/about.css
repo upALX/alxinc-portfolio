@@ -372,6 +372,7 @@ footer h3{
         padding-left: 80px;
         padding-right: 25px;
     }
+    
     .presentation__assignment__text-box small{
         margin-bottom: 10px;
     }
@@ -392,5 +393,23 @@ footer h3{
         border-right: 15px solid var(--ice-color);
         border-left: 0;
         left: -15px;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 450px){
+    .presentation{
+        padding: 0;
+    }
+
+    .presentation__assignment__timeline{
+        margin: 20px;
+    }
+    
+    div.presentation__assignment__container img{
+        width: 2.5em;
+    }
+
+    div.presentation__assignment__container{
+        /* width: ; */
     }
 }
