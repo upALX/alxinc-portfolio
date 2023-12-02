@@ -48,7 +48,7 @@ header.navigation{
 
 .navigation__menu__link{
     font-family: var(--secondary-word);
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: 600;
     color: var(--secondary-color);
     display: inline-block;
@@ -95,12 +95,12 @@ section.presentation__assignment{
 }
 
 h1.presentation__assignment__title{
-    font-size: 2rem;
+    font-size: 1.7em;
     font-family: var(--first-font);
 }
 
 p.presentation__assignment__paragraphs{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: var(--first-font);
     margin-bottom: 5%;
     width: 200px;
@@ -242,7 +242,7 @@ footer h3{
 
     .navigation__menu {
         justify-content: center;
-        font-size: 1.6em;
+        font-size: 1.2em;
     }
 
     .presentation{
@@ -270,23 +270,25 @@ footer h3{
     }
 }
 
-@media(min-width: 250px) and (max-width: 450px){
+@media(min-width: 200px) and (max-width: 450px){
 
     header .navigation__menu {
         gap: 40px;
     }
 
     a.navigation__menu__link{
-        font-size: 1em;
+        font-size: 1.3em;
     }
     
 
     h1.presentation__assignment__title{
         width: 200px;
+        font-size: 1.4em;
     }
 
     p.presentation__assignment__paragraphs{
         width: 200px;
+        font-size: 1.2em;
     }
 
     .presentation__links__link{
@@ -313,7 +315,7 @@ footer h3{
     }
 
     a.navigation__menu__link{
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     h1.presentation__assignment__title{
