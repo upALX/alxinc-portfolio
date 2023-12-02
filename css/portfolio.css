@@ -128,13 +128,13 @@ section div.presentation__card{
 
 section div.presentation__card div.view_project{
     background-color: white;
-    width: 50%;
+    width: 80%;
     height: 50%;
     margin: 0.5em;
     display: flex;
 }
 
-.view_project img{
+.view_project iframe{
     width: 100%;
     height: 100%;
     z-index: 4;
@@ -293,15 +293,12 @@ footer h3{
 
 @media (min-width: 600px) and (max-width: 1200px){
 
-    html, body{
+    /* html, body{
         height: 100%;
         margin: 0;
-    }
+    } */
 
-    body{
-        display: flex;
-        flex-direction: column;
-    }
+    
 
     header.navigation {
         padding: 3%;
@@ -311,9 +308,8 @@ footer h3{
         justify-content: center;
     }
 
-    .presentation{
-        flex-direction: column-reverse;
-        padding: 5%;
+    /* .presentation{
+        padding: 5% 0;
     }
 
     .presentation__assignment {
@@ -325,25 +321,19 @@ footer h3{
         font-size: 1.6rem;
     }
 
-    p.presentation__assignment__paragraphs{
-        font-size: 1.2rem;
-    }
-
-    h2.presentation__links__subtitle{
-        font-size: 1.2rem;
-    }
-
     
     div.presentation__buttons-link{
         width: 30%;
         opacity: 1;
-    }
+    } */
+
 }
 
-@media(min-width: 350px) and (max-width: 600px){
+@media(min-width: 250px) and (max-width: 600px){
     section div.presentation__card div.view_project{
         background-color: white;
-        width: 80%;
+        width: 90%;
+        border: none;
         height: 50%;
         margin: 0.5em;
         display: flex;
