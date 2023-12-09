@@ -370,7 +370,7 @@ footer h3{
     .presentation__assignment__container{
         width: 100%;
         padding-left: 80px;
-        padding-right: 25px;
+        padding-right: 15px;
     }
     
     .presentation__assignment__text-box small{
@@ -410,6 +410,6 @@ footer h3{
     }
 
     div.presentation__assignment__container{
-        /* width: ; */
+        overflow-wrap: break-word;
     }
 }
