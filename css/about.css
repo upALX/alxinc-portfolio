@@ -411,5 +411,7 @@ footer h3{
 
     div.presentation__assignment__container{
         overflow-wrap: break-word;
+        padding-left: 65px;
+        padding-right: 5px;
     }
 }
