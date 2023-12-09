@@ -202,6 +202,17 @@ div.presentation__assignment__text-box{
     font-family: var(--secondary-word);
 }
 
+div.presentation__text-box__list{
+    margin-left: 50px;
+    margin-top: 16px;
+}
+
+div.presentation__text-box__list ul.presentation__text-box__list-styled{
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
 div.presentation__assignment__text-box button{
     margin-top: 1em;
     border-radius: 6px;
@@ -331,6 +342,7 @@ footer h3{
     body{
         display: flex;
         flex-direction: column;
+        overflow-y: hidden;
     }
 
     .navigation__menu {
