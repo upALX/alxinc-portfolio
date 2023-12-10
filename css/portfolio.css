@@ -1,24 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,600;1,400&display=swap');
 @import url(reset.css);
+@import url('/css/style.css');
+/* #ECB365;  */
 
-:root{
-    --main-color: #212121;
-    --main-words-color:  rgba(255, 255, 255, 0.918);
-    --secondary-color:#6bd0f8;
-    /* #ECB365;  */
-    --ice-color: #f6f6f6;
-    --background-hover: rgba(39, 39, 39, 1);
-    --background-black-hover: rgba(39, 39, 39, 1);
-    --background-cover-card:  rgb(107,208,248);
-
-    --first-font: 'Krona One', sans-serif;
-    --secondary-word: 'Monserrat', sans-serif;
-    --scrollbar-color: rgba(46, 222, 245, 0.144);
-
-    --swiper-pagination-progressbar-bg-color: var(--secondary-color)
-    --swipper-pagination-color: var(--secondary-color)
-}
-    
 body{
     background-color: var(--main-color);
     color: var(--main-words-color);
@@ -127,7 +111,7 @@ section div.presentation__card{
 }
 
 section div.presentation__card div.view_project{
-    background-color: white;
+    background-color: var(--main-words-color);
     width: 80%;
     height: 50%;
     margin: 0.5em;
@@ -167,7 +151,7 @@ div.presentation__buttons-link{
 }
 
 div.presentation__buttons-link button{
-    background-color: var(--ice-color);
+    background-color: var(--secondary-color);
     border-radius: 50%;
     border: 2px solid var(--main-color);
     padding: 4px;
@@ -179,7 +163,7 @@ div.presentation__buttons-link button:hover{
     cursor: pointer;
     opacity: 1;
     transition: 0.3s;
-    border-color: var(--secondary-color);
+    border-color: var(--main-words-color);
 }
 
 div.swiper-pagination{
@@ -331,7 +315,7 @@ footer h3{
 
 @media(min-width: 250px) and (max-width: 600px){
     section div.presentation__card div.view_project{
-        background-color: white;
+        background-color: var(--main-words-color);
         width: 90%;
         border: none;
         height: 50%;
@@ -350,5 +334,4 @@ footer h3{
     section div.presentation__card div.presentation_content p{
         font-size: 0.9em;
     }
-
 }
