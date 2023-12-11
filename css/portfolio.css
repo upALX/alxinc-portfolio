@@ -292,7 +292,9 @@ footer h3{
     } */
 
     
-
+    a.navigation__menu__link{
+        font-size: 1.5em;
+    }
     header.navigation {
         padding: 3%;
     }
@@ -323,6 +325,9 @@ footer h3{
 }
 
 @media(min-width: 250px) and (max-width: 600px){
+    a.navigation__menu__link{
+        font-size: 1.5em;
+    }
     section div.presentation__card div.view_project{
         background-color: var(--main-words-color);
         width: 90%;
