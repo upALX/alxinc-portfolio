@@ -343,7 +343,7 @@ footer h3{
     body{
         display: flex;
         flex-direction: column;
-        overflow-y: hidden;
+        overflow-x: hidden;
     }
 
     .navigation__menu {
