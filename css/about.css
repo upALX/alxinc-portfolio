@@ -373,6 +373,12 @@ footer h3{
     }
 }
 
+@media (max-width: 1000px){
+    div.presentation__text-box__list ul.presentation__text-box__list-styled{
+        columns: 1;
+    }
+}
+
 @media screen and (max-width: 650px){
     .presentation__assignment__timeline{
         margin: 50px;

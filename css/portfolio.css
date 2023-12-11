@@ -67,11 +67,15 @@ main.presentation{
 
 section.presentation__assignment{
     width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .presentation__assignment__title{
-    text-align: center;
-    padding-bottom: 1em;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: var(--first-font);
     color: var(--secondary-color);
     margin-bottom: 1em;
