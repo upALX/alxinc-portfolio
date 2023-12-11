@@ -67,11 +67,15 @@ main.presentation{
 
 section.presentation__assignment{
     width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .presentation__assignment__title{
-    text-align: center;
-    padding-bottom: 1em;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: var(--first-font);
     color: var(--secondary-color);
     margin-bottom: 1em;
@@ -200,8 +204,9 @@ footer.footer{
     position: relative;
 }
 
+
+
 footer a.footer_links{
-    margin: 0 24px;
     text-decoration: none;
 }
 
@@ -217,6 +222,7 @@ footer h3{
     position: absolute;
     bottom: 0;
 }
+
 
 @media (min-width: 1200px){
     section div.presentation__card{
@@ -260,7 +266,6 @@ footer h3{
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 0 32px;
         border-radius: 50%;
         text-decoration: none;
     }
@@ -288,7 +293,9 @@ footer h3{
     } */
 
     
-
+    a.navigation__menu__link{
+        font-size: 1.5em;
+    }
     header.navigation {
         padding: 3%;
     }
@@ -319,6 +326,9 @@ footer h3{
 }
 
 @media(min-width: 250px) and (max-width: 600px){
+    a.navigation__menu__link{
+        font-size: 1.5em;
+    }
     section div.presentation__card div.view_project{
         background-color: var(--main-words-color);
         width: 90%;

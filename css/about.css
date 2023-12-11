@@ -350,6 +350,8 @@ footer h3{
         justify-content: center;
     }
 
+    
+
     .presentation{
         flex-direction: column-reverse;
         padding: 5%;
@@ -370,6 +372,12 @@ footer h3{
 
     h2.presentation__links__subtitle{
         font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1000px){
+    div.presentation__text-box__list ul.presentation__text-box__list-styled{
+        columns: 1;
     }
 }
 
