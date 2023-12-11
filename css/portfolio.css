@@ -112,7 +112,7 @@ section div.presentation__card{
 
 section div.presentation__card div.view_project{
     background-color: var(--main-words-color);
-    width: 80%;
+    width: 65%;
     height: 50%;
     margin: 0.5em;
     display: flex;
@@ -122,6 +122,11 @@ section div.presentation__card div.view_project{
     width: 100%;
     height: 100%;
     z-index: 4;
+}
+
+.view_project img{
+    width: 100%;
+    height: 100%;
 }
 
 section div.presentation__card div.presentation_content{
