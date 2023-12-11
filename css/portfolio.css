@@ -204,8 +204,9 @@ footer.footer{
     position: relative;
 }
 
+
+
 footer a.footer_links{
-    margin: 0 24px;
     text-decoration: none;
 }
 
@@ -221,6 +222,7 @@ footer h3{
     position: absolute;
     bottom: 0;
 }
+
 
 @media (min-width: 1200px){
     section div.presentation__card{
@@ -264,7 +266,6 @@ footer h3{
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 0 32px;
         border-radius: 50%;
         text-decoration: none;
     }
